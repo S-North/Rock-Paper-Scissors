@@ -12,11 +12,12 @@ def clear():
 # global variables
 RockPaperScissors = ["rock", "paper", "scissors","rock", "paper", "scissors","rock", "paper", "scissors","rock", "paper", "scissors"]
 PlayerHand = "rock"
-MyHand = ""
+MyHand = "paper"
 Score_Player = 0
 Score_Me = 0
 WhoWon = ""
 most_freq = {"rock": 0, "paper": 0, "scissors": 0}
+
 
 # this is the menu for launching new games or exiting
 def menu():
