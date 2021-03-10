@@ -1,13 +1,14 @@
 import random
 from os import system, name
 
-
+# clears the screen betwwen actions
 def clear():
     if name == 'nt':
         _ = system('cls')
     else:
         _ = system('clear')
 
+# global variables
 RockPaperScissors = ["rock", "paper", "scissors","rock", "paper", "scissors","rock", "paper", "scissors","rock", "paper", "scissors"]
 PlayerHand = "rock"
 MyHand = ""
@@ -16,7 +17,7 @@ Score_Me = 0
 WhoWon = ""
 most_freq = {"rock": 0, "paper": 0, "scissors": 0}
 
-
+# logic for trying to select a winning move
 def winning_move(WhoWon, player, me):
     if WhoWon == "me":
         me = RockPaperScissors.index(me)
@@ -29,7 +30,7 @@ def winning_move(WhoWon, player, me):
         # print(me)
     return me
 
-
+# update everything once we have a winner
 def winner(winner):
     clear()
     global PlayerHand
