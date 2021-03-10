@@ -57,7 +57,7 @@ def winner(winner):
     input("Press ENTER to continue...")
     clear()
 
-
+# here is the actual game running
 def run_game_logic():
     clear()
     global PlayerHand
@@ -92,7 +92,7 @@ def run_game_logic():
     else:
         winner("player")
 
-
+# this is the menu for launching new games or exiting
 def menu():
     clear()
     global Score_Player
